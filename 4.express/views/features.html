@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block title %}features{% endblock %}
+
+{% block body %}
+<ul>
+    {% for features in features %}
+
+    <li>
+    <a href="/features/{{ loop.index0 }}">
+    {{ features.src }}</a>
+
+    {{ features.tit }}
+    {{ features.info }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

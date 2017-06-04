@@ -1,0 +1,69 @@
+transform-rotate()
+  -webkit-animation (args)
+  animation (args)
+
+.icon
+  width:125px
+  height: 120px
+  position: relative
+  .frog
+  	position: absolute
+  	top: 0
+ 	left: 0
+ 	width: 100%
+ 	height: 100%
+ 		.body
+  			width: 110px
+  			height: 86px
+  			background-color: #A3D768
+  			border-radius: 50%
+  			position: absolute
+  			top: 25px
+  			left: 0
+  			right: 0
+  			margin: auto
+  			box-shadow: 4px 4px 0px 0px rgba(163, 215, 104, 0.3)
+  				.mouth
+  					margin: auto
+  				.big-mouth
+  					width: 30px
+  					height: 20px
+  					border-radius: 0 0 50% 50%
+  					box-shadow: 2px 2px 0px 0px rgba(63, 106, 52, 0.3)
+  				.eyes
+ 					 width: 86px
+ 					 height: 35px
+ 					 position: absolute
+ 					 top: 8px
+ 					 left: 0
+ 					 right: 0
+ 					 margin: auto
+ 					.eye
+ 						width: 35px
+  						height: 35px
+  						&:before
+ 							 content: ""
+ 							 display: block
+ 							 width: 100%
+ 							 height: 100%
+ 							 background-color: #A3D768
+ 							 border-radius: 50%
+						.wink
+							.eye-inner
+								&:after
+									 transform-rotate -25deg
+									 position: absolute
+ 									 top: 4px
+ 									 left: 0
+
+
+
+
+@keyframes smile
+    0%
+      border-radius: 0%
+    20%
+       border-radius: 50%
+    70% 
+      border-radius: 50%
+
